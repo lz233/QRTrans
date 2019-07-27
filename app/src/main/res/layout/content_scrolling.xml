@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling"
+    android:background="@color/colorPrimary">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/cardview_margin"
+        android:layout_marginRight="@dimen/cardview_margin"
+        android:layout_marginBottom="@dimen/cardview_margin">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:id="@+id/request_permissions_linearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                <ImageView
+                        android:layout_margin="@dimen/cardview_margin"
+                        android:layout_width="@dimen/bigico_size"
+                        android:layout_height="@dimen/bigico_size"
+                        app:srcCompat="@drawable/ic_permissions"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/cardview_margin"
+                            android:text="@string/request_permissions"
+                            android:textColor="@color/warn"
+                            android:textSize="@dimen/textview_title_size"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/request_permissions_text"
+                            android:textColor="@color/warn"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/start_scan_linearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                            android:layout_margin="@dimen/cardview_margin"
+                            android:layout_width="@dimen/bigico_size"
+                            android:layout_height="@dimen/bigico_size"
+
+                            app:srcCompat="@drawable/ic_scan"/>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/cardview_margin"
+                                android:text="@string/start_scan"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/textview_title_size"/>
+
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/start_scan_text"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/send_file_linearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:layout_margin="@dimen/cardview_margin"
+                        android:layout_width="@dimen/bigico_size"
+                        android:layout_height="@dimen/bigico_size"
+
+                        app:srcCompat="@drawable/ic_send"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/cardview_margin"
+                            android:text="@string/title_activity_send"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/textview_title_size"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/send_files_text"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/setting_linearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:layout_margin="@dimen/cardview_margin"
+                        android:layout_width="@dimen/bigico_size"
+                        android:layout_height="@dimen/bigico_size"
+
+                        app:srcCompat="@drawable/ic_setting"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/cardview_margin"
+                            android:text="@string/title_activity_setting"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/textview_title_size"/>
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/setting_text"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</android.support.v4.widget.NestedScrollView>

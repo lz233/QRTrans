@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".SettingActivity"
+        tools:showIn="@layout/activity_setting"
+        android:background="@color/colorPrimary">
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/cardview_margin"
+            android:layout_marginRight="@dimen/cardview_margin"
+            android:layout_marginBottom="@dimen/cardview_margin">
+
+        <LinearLayout
+                android:id="@+id/about_linearlayout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <ImageView
+                        android:layout_width="@dimen/ico_size"
+                        android:layout_height="@dimen/ico_size"
+                        app:srcCompat="@drawable/ic_info"
+                        android:layout_margin="@dimen/list_margin"
+                        android:id="@+id/imageView"/>
+                <TextView
+                        android:text="@string/setting_about"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</android.support.v4.widget.NestedScrollView>

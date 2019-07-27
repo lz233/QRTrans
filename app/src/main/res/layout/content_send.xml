@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SendActivity"
+    tools:showIn="@layout/activity_send"
+    android:background="@color/colorPrimary">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/cardview_margin"
+        android:layout_marginRight="@dimen/cardview_margin"
+        android:layout_marginBottom="@dimen/cardview_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardview_margin"
+                android:layout_marginLeft="@dimen/cardview_margin"
+                android:layout_marginRight="@dimen/cardview_margin"
+                android:text="@string/Select_title"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textview_title_size"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/cardview_margin"
+                android:layout_marginLeft="@dimen/cardview_margin"
+                android:layout_marginRight="@dimen/cardview_margin">
+
+                <TextView
+                    android:id="@+id/file_path_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/cardview_margin"
+                    android:text=" " />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="0dp"
+                    app:cardMaxElevation="0dp"
+                    android:layout_gravity="center">
+                    <Button
+                        android:id="@+id/select_button"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:background="@drawable/buttonstyle"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:text="@string/select_button" />
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardview_margin"
+                android:layout_marginLeft="@dimen/cardview_margin"
+                android:layout_marginRight="@dimen/cardview_margin"
+                android:text="@string/each_code_size_title"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textview_title_size"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/cardview_margin"
+                android:layout_marginLeft="@dimen/cardview_margin"
+                android:layout_marginRight="@dimen/cardview_margin">
+
+                <SeekBar
+                    android:id="@+id/code_size_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:max="256"
+                    android:layout_marginRight="@dimen/cardview_margin"/>
+                <TextView
+                    android:id="@+id/code_size_text"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text=" " />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardview_margin"
+                android:layout_marginLeft="@dimen/cardview_margin"
+                android:layout_marginRight="@dimen/cardview_margin"
+                android:text="@string/each_code_time"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textview_title_size"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/cardview_margin"
+                android:layout_marginLeft="@dimen/cardview_margin"
+                android:layout_marginRight="@dimen/cardview_margin">
+
+                <SeekBar
+                    android:id="@+id/code_time_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:max="20"
+                    android:layout_marginRight="@dimen/cardview_margin"/>
+                <TextView
+                    android:id="@+id/code_time_text"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text=" " />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardview_margin"
+                android:layout_marginLeft="@dimen/cardview_margin"
+                android:layout_marginRight="@dimen/cardview_margin"
+                android:text="@string/estimated_time_title"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textview_title_size"/>
+
+            <TextView
+                android:id="@+id/estimated_time_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_margin"
+                android:text=" " />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</android.support.v4.widget.NestedScrollView>

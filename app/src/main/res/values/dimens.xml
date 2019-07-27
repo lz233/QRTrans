@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="app_bar_height">200dp</dimen>
+    <dimen name="cardview_margin">20dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="textview_title_size">25sp</dimen>
+    <dimen name="textview_bigtitle_size">35sp</dimen>
+    <dimen name="bigico_size">60dp</dimen>
+    <dimen name="ico_size">30dp</dimen>
+    <dimen name="list_margin">10dp</dimen>
+</resources>
