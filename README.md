@@ -1,6 +1,6 @@
 # QRTrans
 
-[![license](https://img.shields.io/badge/license-%20Apache--2.0-blue.svg)](https://github.com/lz233/remaining_for_wear_os/blob/master/LICENSE)
+[![license](https://img.shields.io/badge/license-%20Apache--2.0-blue.svg)](https://github.com/lz233/QRTrans/blob/master/LICENSE)
 [![platform](https://img.shields.io/badge/flatpofm-Android-yellow.svg)](https://www.android.com)
 [![API](https://img.shields.io/badge/API-23%2B-brightgreen.svg)](https://android-arsenal.com/api?level=23)
 
